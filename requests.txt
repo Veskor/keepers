@@ -1,0 +1,19 @@
+curl --location --request POST 'http://localhost:8000/api/v1/bookmarks/' \
+--header 'Authorization: Basic dGVzdDI6dmV4MTIzMTIz' \
+--form 'title="123123"' \
+--form 'url="https://www.facebook.com"' \
+--form 'public="true"'
+
+curl --location --request PATCH 'http://localhost:8000/api/v1/bookmarks/1/' \
+--header 'Authorization: Basic dmVza29yOnZleDEyMzEyMw==' \
+--form 'title="123123"' \
+--form 'url="https://www.faceboo1k.com"'
+
+curl --location --request GET 'http://localhost:8000/api/v1/bookmarks/' \
+--header 'Authorization: Basic dmVza29yOnZleDEyMzEyMw==' \
+
+curl --location --request DELETE 'http://localhost:8000/api/v1/bookmarks/1/' \
+--header 'Authorization: Basic dmVza29yOnZleDEyMzEyMw==' \
+
+curl --location --request GET 'http://localhost:8000/api/v1/bookmarks/3/' \
+--header 'Authorization: Basic dmVza29yOnZleDEyMzEyMw==' \
